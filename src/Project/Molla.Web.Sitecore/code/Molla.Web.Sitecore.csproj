@@ -84,37 +84,7 @@
     <None Include="Properties\PublishProfiles\bneapp40.qa.pubxml" />
     <None Include="Properties\PublishProfiles\bneapp40.dev.dm.pubxml" />
     <None Include="Properties\PublishProfiles\bneapp40.dev.pubxml" />
-    <Content Include="Views\HtmlSnippets\tables.html" />
-    <Content Include="Views\RichTextBox\Snippets\tables.html" />
-    <Content Include="Views\Layouts\Main.cshtml" />
-    <Content Include="Views\PromoBanner\Index.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\BandedSection\BandedSection.cshtml" />
-    <Content Include="Views\EditableThreeColumn\Index.cshtml" />
-    <Content Include="Views\EditableTwoColumn\Index.cshtml" />
-    <Content Include="Views\Calculator\Homeloan.cshtml" />
-    <Content Include="Views\Calculator\_CalculatorSection.cshtml" />
-    <Content Include="Views\Calculator\_HowWeCanHelpYou.cshtml" />
-    <Content Include="Views\Calculator\_Insurance.cshtml" />
-    <Content Include="Views\Calculator\_RepairAndMaintenance.cshtml" />
-    <Content Include="Views\Calculator\_StampDuty.cshtml" />
-    <Content Include="Views\Calculator\_Summary - Copy.cshtml" />
-    <Content Include="Views\Calculator\_TopPanel.cshtml" />
-    <Content Include="Views\Calculator\_TopPanelSummary.cshtml" />
-    <Content Include="Views\Calculator\_TotalCostSummary.cshtml" />
-    <Content Include="Views\Calculator\_TotalUpFrontCosts.cshtml" />
-    <Content Include="Views\Calculator\_UpFrontCosts.cshtml" />
-    <Content Include="Views\Calculator\_WaterAndRates.cshtml" />
-    <Content Include="Views\HBLogin\Index.cshtml" />
-    <Content Include="Views\LoanRatesTable\Index.cshtml" />
-    <Content Include="Views\Structural\BandedSection.cshtml" />
-    <Content Include="Views\Structural\PageHeaderSection.cshtml" />
-    <Content Include="Views\Structural\TestBlock.cshtml" />
-    <Content Include="Views\Structural\ThreeColumn.cshtml" />
-    <Content Include="Views\Structural\TwoColumn.cshtml" />
-    <Content Include="Views\Card\ShowMoreCards.cshtml" />
-    <Content Include="Views\Layouts\Main_PFB_Foundation.cshtml" />
-    <Content Include="Views\Layouts\_Layout_Main_PFB_Foundation.cshtml" />
+    <Content Include="Views\MollaLayout\MollaSxaLayout.cshtml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
@@ -126,96 +96,10 @@
     <None Include="Views\web.config">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Views\zTest\TestBlock.cshtml" />
-    <Content Include="Views\TwoColumn\TwoColumn.cshtml" />
-    <Content Include="Views\ThreeColumn\ThreeColumn.cshtml" />
-    <Content Include="Views\PageHeader\PageHeaderSection.cshtml" />
-    <Content Include="Views\HeroBanner\StaticImageText.cshtml" />
-    <Content Include="Views\HeroBanner\StaticImageVariantRates.cshtml" />
-    <Content Include="Views\HeroBanner\StaticImageDropdown.cshtml" />
-    <Content Include="Views\Card\CardVariantsRates.cshtml" />
-    <Content Include="Views\Card\CardVariantsImage.cshtml" />
-    <Content Include="Views\Button\Index.cshtml" />
-    <Content Include="Views\Card\CardVariantsTwoColumn.cshtml" />
-    <Content Include="Views\CollapsiblePanel\Index.cshtml" />
-    <Content Include="Views\Menu\Index.cshtml" />
-    <Content Include="Views\Carousel\Index.cshtml" />
-    <Content Include="Views\SideNavigation\Index.cshtml" />
-    <Content Include="Views\Heading\Index.cshtml" />
-    <Content Include="Views\TwoColumn\EditableTwoColumn.cshtml" />
-    <Content Include="Views\SectionMenu\Index.cshtml" />
-    <Content Include="Views\SectionMenu\SectionMenuItem.cshtml" />
-    <Content Include="Views\RichTextBox\Index.cshtml" />
-    <Content Include="Views\HBFooter\FooterDesktop.cshtml" />
-    <Content Include="Views\Breadcrumb\Index.cshtml" />
-    <Content Include="Views\Card\CardVariantsLinks.cshtml" />
-    <Content Include="Views\HBFooter\FooterMobile.cshtml" />
-    <Content Include="Views\QuickNavigation\Index.cshtml" />
-    <Content Include="Views\Menu\_MenuEntityItem.cshtml" />
-    <Content Include="Views\Menu\_MobileSectionMenu.cshtml" />
-    <Content Include="Views\Menu\_MobileMenuEntityItem.cshtml" />
-    <Content Include="Views\Menu\_MobileMainMenu.cshtml" />
-    <Content Include="Views\Menu\_MobileMenuItem.cshtml" />
-    <Content Include="Views\Menu\_MobileSubMenuItem.cshtml" />
-    <Content Include="Views\SecurityBar\Index.cshtml" />
-    <Content Include="Views\ThreeColumn\EditableThreeColumn.cshtml" />
-    <Content Include="Views\HtmlTextBox\Index.cshtml" />
-    <Content Include="Views\LoanRates\Index.cshtml" />
-    <Content Include="Views\Card\CardVariantsTextIcon.cshtml" />
-    <Content Include="Views\Card\CardGroupNavigation.cshtml" />
-    <Content Include="Views\BandedSection\BandedSectionHeader.cshtml" />
-    <Content Include="Views\SideNavigation\SideNavigationStopWaypoint.cshtml" />
-    <Content Include="Views\Card\CardVariantsTwoColumnTextImage.cshtml" />
-    <Content Include="Views\Card\CardVariantsSmallerFontBodyText.cshtml" />
-    <Content Include="Views\QuickNavigation\SectionQuicklinksWithIcon.cshtml" />
-    <Content Include="Views\Menu\_HBLogin.cshtml" />
-    <Content Include="Views\CollapsiblePanel\FoldableSection.cshtml" />
-    <Content Include="Views\Search\SearchBar.cshtml" />
-    <Content Include="Views\Search\Index.cshtml" />
-    <Content Include="Views\Repeater\Index.cshtml" />
-    <Content Include="Views\LoanRates\Fees.cshtml" />
-    <Content Include="Views\Card\CardVariantsImageNoCaption.cshtml" />
-    <Content Include="Views\Card\CardVariantsYoutube.cshtml" />
-    <Content Include="Views\SocialTags\Article.cshtml" />
-    <Content Include="Views\SocialTags\Basic.cshtml" />
-    <Content Include="Views\SocialTags\Location.cshtml" />
-    <Content Include="Views\SocialTags\Place.cshtml" />
-    <Content Include="Views\SocialTags\Product.cshtml" />
-    <Content Include="Views\SocialTags\ProductGroup.cshtml" />
-    <Content Include="Views\SocialTags\SocialMetaTags.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\heritage.dev.local.pubxml" />
     <None Include="Properties\PublishProfiles\long.dev.bn.pubxml" />
     <None Include="Properties\PublishProfiles\WebDeployPackage.pubxml" />
-    <Content Include="Views\Layouts\_Layout.cshtml" />
-    <Content Include="Views\Embed\Embed.cshtml" />
-    <Content Include="Views\BranchLocator\Index.cshtml" />
-    <Content Include="Views\BranchLocator\_DirectionCard.cshtml" />
-    <Content Include="Views\BranchLocator\_GoogleMapsCard.cshtml" />
-    <Content Include="Views\BranchLocator\_OpeningHours.cshtml" />
-    <Content Include="Views\BranchLocator\_Services.cshtml" />
-    <Content Include="Views\BranchLocator\_WeAreHereToHelp.cshtml" />
-    <Content Include="Views\SecurityBar\_NavbarRight.cshtml" />
-    <Content Include="Views\Menu\_MobileFooter.cshtml" />
-    <Content Include="Views\SectionMenuItem\Index.cshtml" />
-    <Content Include="Views\BrokerLoginButton\_BrokerLogin.cshtml" />
-    <Content Include="Views\Card\CardVariants_Multipurpose.cshtml" />
-    <Content Include="Views\Card\CardVariantsChildLinks.cshtml" />
-    <Content Include="Views\Card\CardVariantsTextAndImageCardComponent.cshtml" />
-    <Content Include="Views\Card\TextandImageHalfCardComponent.cshtml" />
-    <Content Include="Views\FourColumn\EditableFourColumn.cshtml" />
-    <Content Include="Views\FourColumn\FourColumn.cshtml" />
-    <Content Include="Views\Card\HeadingCardOne.cshtml" />
-    <Content Include="Views\Card\HeadingCardTwo.cshtml" />
-    <Content Include="Views\Containers\ThreeCardContainer.cshtml" />
-    <Content Include="Views\Containers\SixCardContainer.cshtml" />
-    <Content Include="Views\Containers\FourColumnCardContainer.cshtml" />
-    <Content Include="Views\Containers\TwoCardContainer.cshtml" />
-    <Content Include="Views\Article\SimpleArticle.cshtml" />
-    <Content Include="Views\Article\InfographicPopup.cshtml" />
-    <Content Include="Views\Card\RatePromoBanner.cshtml" />
-    <Content Include="Views\Menu\_LoadMobileSubMenu.cshtml" />
-    <Content Include="Views\Layouts\Feeds.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -226,7 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\Project\" />
-    <Folder Include="Views\RateFeed\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
