@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<Sitecore>
+		<ExternalIdentityProviders>
+			<IdentityProviders>
+				<AzureAd>
+					<Enabled>$(AzureADEnabled)</Enabled>
+					<ClientId>$(AzureADClientID)</ClientId>
+					<TenantId>$(AzureADTenantID)</TenantId>
+					<ClaimsTransformations> 
+
+					</ClaimsTransformations>
+				</AzureAd>
+			</IdentityProviders>
+		</ExternalIdentityProviders>
+	</Sitecore>
+</Settings>

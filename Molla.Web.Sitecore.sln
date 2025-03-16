@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{932E8909-8211-43F6-9964-275FADFD3BA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{50DBD10F-12C4-4F9B-9AD9-4A20F6EF0A47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{3286C282-941C-4CE4-8378-D7BAB8223D24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{A875FEA1-F3E4-4963-8126-2956F0069A24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{65DA36F7-3F30-409C-B791-B6BEA14F89B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{DF00ADD7-90A0-4BB8-8718-F5C92A3A2D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\code\Molla.Foundation.DependencyInjection.csproj", "{366148B7-2392-4F42-80D6-786B7A3682AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Foundation.Logging", "src\Foundation\Logging\Molla.Foundation.Logging\Molla.Foundation.Logging.csproj", "{EAD9AE65-06DC-433B-A98B-623046DF0B00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{6457E945-759D-46E4-858C-6F0301C2E1BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Feature.Navigation", "src\Feature\Navigation\code\Molla.Feature.Navigation.csproj", "{16003E7F-0FAF-4DEE-B13D-DD327E965A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Web.Sitecore", "src\Project\Molla.Web.Sitecore\code\Molla.Web.Sitecore.csproj", "{96D40ECB-D426-4B94-AFF6-403307BC0C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Platform.Configuration.IdentityServer", "src\Platform\Configuration\identityserver\Molla.Platform.Configuration.IdentityServer.csproj", "{6E083D2B-2A46-43BB-8665-D078C1D83CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molla.Platform.Configuration", "src\Platform\Configuration\platform\Molla.Platform.Configuration.csproj", "{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{366148B7-2392-4F42-80D6-786B7A3682AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366148B7-2392-4F42-80D6-786B7A3682AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366148B7-2392-4F42-80D6-786B7A3682AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366148B7-2392-4F42-80D6-786B7A3682AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD9AE65-06DC-433B-A98B-623046DF0B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD9AE65-06DC-433B-A98B-623046DF0B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD9AE65-06DC-433B-A98B-623046DF0B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD9AE65-06DC-433B-A98B-623046DF0B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16003E7F-0FAF-4DEE-B13D-DD327E965A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16003E7F-0FAF-4DEE-B13D-DD327E965A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16003E7F-0FAF-4DEE-B13D-DD327E965A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16003E7F-0FAF-4DEE-B13D-DD327E965A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D40ECB-D426-4B94-AFF6-403307BC0C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D40ECB-D426-4B94-AFF6-403307BC0C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D40ECB-D426-4B94-AFF6-403307BC0C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D40ECB-D426-4B94-AFF6-403307BC0C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E083D2B-2A46-43BB-8665-D078C1D83CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E083D2B-2A46-43BB-8665-D078C1D83CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E083D2B-2A46-43BB-8665-D078C1D83CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E083D2B-2A46-43BB-8665-D078C1D83CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65DA36F7-3F30-409C-B791-B6BEA14F89B4} = {50DBD10F-12C4-4F9B-9AD9-4A20F6EF0A47}
+		{DF00ADD7-90A0-4BB8-8718-F5C92A3A2D92} = {50DBD10F-12C4-4F9B-9AD9-4A20F6EF0A47}
+		{366148B7-2392-4F42-80D6-786B7A3682AE} = {65DA36F7-3F30-409C-B791-B6BEA14F89B4}
+		{EAD9AE65-06DC-433B-A98B-623046DF0B00} = {DF00ADD7-90A0-4BB8-8718-F5C92A3A2D92}
+		{6457E945-759D-46E4-858C-6F0301C2E1BE} = {932E8909-8211-43F6-9964-275FADFD3BA3}
+		{16003E7F-0FAF-4DEE-B13D-DD327E965A98} = {6457E945-759D-46E4-858C-6F0301C2E1BE}
+		{96D40ECB-D426-4B94-AFF6-403307BC0C73} = {3286C282-941C-4CE4-8378-D7BAB8223D24}
+		{6E083D2B-2A46-43BB-8665-D078C1D83CDE} = {A875FEA1-F3E4-4963-8126-2956F0069A24}
+		{4161A09E-8DF9-41CF-BEF9-6738F7FEF9D8} = {A875FEA1-F3E4-4963-8126-2956F0069A24}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {549D7856-2FA0-4F2A-8ADB-14D987321BCE}
+	EndGlobalSection
+EndGlobal

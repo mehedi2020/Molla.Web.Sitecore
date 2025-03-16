@@ -1,0 +1,33 @@
+﻿@using Heritage.Web.SC.Business.Constants.Templates
+
+@if (Sitecore.Context.PageMode.IsNormal && RenderingContext.Current?.Rendering?.Item != null)
+{
+    string componentJs = RenderingContext.Current.Rendering.Item[BaseComponentInformation.Fields.ComponentJs];
+    string componentCss = RenderingContext.Current.Rendering.Item[BaseComponentInformation.Fields.ComponentCss];
+    if (!string.IsNullOrEmpty(componentJs))
+    {
+    <script type = "text/javascript" >
+                      (function()
+        {
+            try
+            {
+                @Html.Raw(componentJs)
+            }
+            catch (e)
+            {
+                console.error(e);
+            }
+        }
+    )
+        ()
+        ;
+    </script>
+    }
+
+    if (!string.IsNullOrEmpty(componentCss))
+    {
+        <style type="text/css">
+            @Html.Raw(RenderingContext.Current.Rendering.Item[BaseComponentInformation.Fields.ComponentCss]) 
+        </style>
+    }
+}

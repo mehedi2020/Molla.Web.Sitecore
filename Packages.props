@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
+  <PropertyGroup>
+    <PlatformVersion>10.4.0</PlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+  <PackageReference Update="HtmlAgilityPack" Version="1.4.9.5" />
+    <PackageReference Update="AjaxControlToolkit" Version="20.1.0" />
+    <PackageReference Update="AutoMapper" Version="6.2.2" />
+    <PackageReference Update="Azure.Messaging.EventHubs" Version="5.7.5" />
+    <PackageReference Update="BuildWebCompiler2022" Version="1.14.8" />
+    <PackageReference Update="ClosedXML" Version="0.95.4" />
+    <PackageReference Update="coverlet.collector" Version="1.3.0" />
+    <PackageReference Update="CsvHelper" Version="2.16.3.0" />
+    <PackageReference Update="datatables.mvc5" Version="0.1.0" />
+    <PackageReference Update="ExtentReports" Version="2.41.0" />
+    <PackageReference Update="GeoCoordinate" Version="1.1.0" />
+    <PackageReference Update="Glass.Mapper.Sc.102.Core" Version="5.8.178" />
+    <PackageReference Update="Glass.Mapper.Sc.102.Mvc" Version="5.8.178" />
+    <PackageReference Update="Glass.Mapper.Sc.102.WebForms" Version="5.8.178" />
+    <PackageReference Update="IdentityServer4.Contrib.Membership" Version="5.1.2" />
+    <PackageReference Update="ImageProcessor" Version="2.9.1" />
+    <PackageReference Update="LazyCache" Version="0.7.1.44" />
+	<PackageReference Update="System.ComponentModel.Annotations" Version="4.0.0" />
+	
+	 <PackageReference Update="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
+    <PackageReference Update="Microsoft.ApplicationInsights" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.Agent.Intercept" Version="2.4.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.DependencyCollector" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.PerfCounterCollector" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.TraceListener" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.Web" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.WindowsServer" Version="2.22.0" />
+	<PackageReference Update="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" Version="2.22.0" />
+    <PackageReference Update="Microsoft.Azure.Amqp" Version="2.6.5" />
+  <PackageReference Update="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+	<PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	<PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+	<PackageReference Update="Microsoft.AspNet.Mvc" Version="5.2.4" />
+	<PackageReference Update="Microsoft.AspNet.Web.Optimization" Version="1.1.3" />
+	<PackageReference Update="Microsoft.AspNet.Razor" Version="3.2.6" />
+	<PackageReference Update="Microsoft.AspNet.TelemetryCorrelation" Version="1.0.8" />
+	<PackageReference Update="Microsoft.AspNet.WebApi" Version="5.2.6" />
+	<PackageReference Update="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />
+	<PackageReference Update="Microsoft.AspNet.WebApi.Core" Version="5.2.6" /> 
+	<PackageReference Update="Microsoft.AspNet.WebApi.WebHost" Version="5.2.6" />
+	<PackageReference Update="Microsoft.AspNet.WebPages" Version="3.2.6" />
+	 <PackageReference Update="Microsoft.Owin" Version="4.2.2" />
+    <PackageReference Update="Microsoft.Owin.Security" Version="4.2.2" />
+    <PackageReference Update="Microsoft.Owin.Security.OAuth" Version="4.2.2" />
+    <PackageReference Update="Microsoft.Owin.Security.Cookies" Version="4.2.2" />
+    <PackageReference Update="Microsoft.Owin.Host.SystemWeb" Version="4.2.2" />
+    <PackageReference Update="Microsoft.Owin.Security.OpenIdConnect" Version="4.2.2" />
+    <PackageReference Update="Microsoft.AspNet.Identity.Core" Version="2.2.1" />
+    <PackageReference Update="Microsoft.AspNet.Identity.Owin" Version="2.2.1" /> 
+	<PackageReference Update="System.Text.Encodings.Web" Version="6.0.0" />
+	<PackageReference Update="System.Text.Json" Version="4.0.0.0" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Update="MSTest.TestAdapter" Version="2.2.5" />
+    <PackageReference Update="MSTest.TestFramework" Version="2.2.5" />
+    <PackageReference Update="MXTires.Microdata" Version="1.0.4.1" />
+    <PackageReference Update="Nito.AsyncEx.Context" Version="5.1.2" />
+    <PackageReference Update="NUnit" Version="3.13.2" />
+    <PackageReference Update="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Update="NVelocity" Version="1.2.0" />
+	<PackageReference Update="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Update="PDFsharp-MigraDoc-GDI" Version="1.50.5147" />
+    <PackageReference Update="RichardSzalay.Helix.Publishing.WebRoot" Version="1.5.6" />
+    <PackageReference Update="Selenium.Support" Version="4.4.0" />
+    <PackageReference Update="Selenium.WebDriver" Version="4.4.0" />
+	<PackageReference Update="Sitecore.Analytics" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Analytics.Core" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Analytics.DataAccess" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Analytics.Model" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Analytics.Processing" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.Analytics.XConnect" Version="$(PlatformVersion)" />
+	  <PackageReference Update="Sitecore.ContentSearch" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.Buckets" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.Client" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Mvc" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Kernel" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.Logging" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.ContentSearch.SolrProvider" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.FakeDb" Version="2.0.1" />
+    <PackageReference Update="Sitecore.Owin.Authentication" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.XConnect" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.XConnect.Web" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.XConnect.Core" Version="$(PlatformVersion)" />
+	<PackageReference Update="Sitecore.XConnect.Client.Configuration" Version="$(PlatformVersion)" /> 
+    <PackageReference Update="Swashbuckle" Version="5.5.3" />
+    <PackageReference Update="Swashbuckle.Core" Version="5.5.3" />
+    <PackageReference Update="Unicorn" Version="4.1.6" />
+	<PackageReference Update="log4net" Version="2.0.15" /> 
+	<PackageReference Update="System.Net.Http" Version="4.0.0" /> 
+	<PackageReference Update="RazorGenerator.Mvc" Version="2.4.9" /> 
+	<PackageReference Update="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="3.6.0" /> 
+	<PackageReference Update="MemoryHook" Version="1.0.2" />
+    <PackageReference Update="SmartSolrSchema.SC101" Version="1.1.2" />
+    <PackageReference Update="SitecoreSidekickAuditLog" Version="1.8.3-dw" />
+    <PackageReference Update="SitecoreSidekickContentMigrator" Version="1.8.3-dw" />
+		<PackageReference Update="System.Diagnostics.DiagnosticSource" Version="6.0.0" />
+		<PackageReference Update="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+		
+		<PackageReference Update="RestSharp" Version="106.15.0" /> 
+	 <PackageReference Update="WebActivatorEx" Version="2.0.0.0" /> 
+		
+  </ItemGroup>
+</Project>

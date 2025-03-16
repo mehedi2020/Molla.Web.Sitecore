@@ -1,0 +1,5 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="http://bn.dev.sitecore.heritage.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+</Project>
