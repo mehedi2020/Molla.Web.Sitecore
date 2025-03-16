@@ -15,12 +15,6 @@
     </ProjectReference>
     <ProjectReference Include="..\..\..\Project\*\code\*.csproj">
       <Name>%(Filename)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Brokers\*\code\*.csproj">
-      <Name>%(Filename)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\SAOO\*\code\*.csproj">
-      <Name>%(Filename)</Name>
     </ProjectReference> 
   </ItemGroup>
  

@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Directory.build.props" />
+    <Content Include="AssemblyLists\Sitecore.Platform.Assemblies 10.2.0 rev. 006766.csv" />
+    <Content Include="AssemblyLists\Sitecore.XConnect.Platform.IndexWorker.Assemblies 10.2.0 rev. 006766.csv" />
+    <Content Include="AssemblyLists\Sitecore.XConnect.Platform.MarketingAutomationEngine.Assemblies 10.2.0 rev. 006766.csv" />
+    <Content Include="AssemblyLists\Sitecore.XConnect.Platform.ProcessingEngine.Assemblies 10.2.0 rev. 006766.csv" />
+    <Content Include="AssemblyLists\Sitecore.XConnect.Platform.Web.Assemblies 10.2.0 rev. 006766.csv" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
