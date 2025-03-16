@@ -66,6 +66,8 @@
     </PackageReference>
 	 <PackageReference Include="Polly">
     </PackageReference>
+	 <PackageReference Include="Microsoft.Extensions.Configuration">
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />

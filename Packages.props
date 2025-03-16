@@ -23,7 +23,9 @@
     <PackageReference Update="IdentityServer4.Contrib.Membership" Version="5.1.2" />
     <PackageReference Update="ImageProcessor" Version="2.9.1" />
     <PackageReference Update="LazyCache" Version="0.7.1.44" />
-	<PackageReference Update="System.ComponentModel.Annotations" Version="4.0.0" />
+	<PackageReference Update="System.ComponentModel.Annotations" Version="4.0.0" /> 
+	<PackageReference Update="Microsoft.Extensions.Configuration" Version="9.0.3" />
+	
 	
 	 <PackageReference Update="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
     <PackageReference Update="Microsoft.ApplicationInsights" Version="2.22.0" />

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -22,11 +24,7 @@ namespace Molla.Foundation.OrderCloud.Common.Services
             _httpClient = httpClient;
             _httpClient.Timeout = TimeSpan.FromSeconds(30); // Set timeout
 
-            // Set the token and authorization header if provided
-            if (!string.IsNullOrEmpty(token))
-            {
-                SetAuthorizationHeader(token);
-            }
+            
 
             // Configure retry policy
             _retryPolicy = Policy
@@ -39,27 +37,7 @@ namespace Molla.Foundation.OrderCloud.Common.Services
                     {
                         Log.Warn($"Retry {retryCount} due to {exception.Message}", this);
                     });
-        }
-
-        // Internal method to set the Authorization header
-        private void SetAuthorizationHeader(string token)
-        {
-            if (string.IsNullOrEmpty(token))
-            {
-                throw new ArgumentException("Token cannot be null or empty.");
-            }
-
-            _token = token;
-
-            // Remove existing Authorization header if present
-            if (_httpClient.DefaultRequestHeaders.Contains("Authorization"))
-            {
-                _httpClient.DefaultRequestHeaders.Remove("Authorization");
-            }
-
-            // Add the new Authorization header
-            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
-        }
+        }  
 
         // Generic GET method with retry
         public async Task<T> GetAsync<T>(string url, Dictionary<string, string> queryParams = null)
