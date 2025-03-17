@@ -8,81 +8,74 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using Molla.Foundation.OrderCloud.Models.Models;
+using Microsoft.Extensions.Configuration;
+using System.Text;
+using Sitecore.Shell.Applications.ContentEditor;
+using Sitecore.Diagnostics;
 
 namespace Molla.Foundation.OrderCloud.Common.Services
 {
     public class OrderCloudAuthService
     {
-        private readonly HttpClient _httpClient;
-        private readonly IConfiguration _configuration;
-        private string _accessToken;
-        private DateTime _tokenExpiry;
+        private static readonly string _tokenUrl = OrderCloudAPIS._tokenUrl; // OrderCloud OAuth token endpoint
+        private static readonly string _clientId = "F9B6874F-59DA-42D3-8B55-8181E7837787"; // Replace with your client ID
+        private static readonly string _clientSecret = "YOUR_CLIENT_SECRET"; // Replace with your client secret
+        private static readonly string _clientUserName = "admin01"; // Replace with your client secret
+        private static readonly string _clientPassword = "Caasco_12345"; // Replace with your client secret
+        private static readonly string _scope = "CatalogAdmin BuyerReader MeAdmin InventoryAdmin PasswordReset OrderAdmin PriceScheduleAdmin ProductAdmin ProductAssignmentAdmin ShipmentAdmin SupplierAdmin SupplierReader"; // Replace with the required scope (e.g., "OrderCloud.Supplier")
 
-        public OrderCloudAuthService(HttpClient httpClient, IConfiguration configuration)
+        public static string GetApiTokenAsync()
         {
-            _httpClient = httpClient;
-            _configuration = configuration;
-        }
-
-        public async Task<string> GetAccessTokenAsync()
-        {
-            if (!string.IsNullOrEmpty(_accessToken) && DateTime.UtcNow < _tokenExpiry)
+            // Validate input parameters
+            if (string.IsNullOrEmpty(_clientId) || string.IsNullOrEmpty(_clientUserName) ||
+                string.IsNullOrEmpty(_clientPassword) || string.IsNullOrEmpty(_scope) || string.IsNullOrEmpty(_tokenUrl))
             {
-                return _accessToken; // Return existing token if still valid
+                throw new ArgumentException("All parameters must be provided and non-empty.");
             }
 
-            return await FetchNewAccessTokenAsync();
-        }
-
-        private async Task<string> FetchNewAccessTokenAsync()
-        {
-            var clientId = _configuration["OrderCloud:ClientId"];
-            var username = _configuration["OrderCloud:Username"];
-            var password = _configuration["OrderCloud:Password"];
-            var tokenUrl = _configuration["OrderCloud:TokenUrl"];
-            var scope = _configuration["OrderCloud:Scope"];
-
-            if (string.IsNullOrEmpty(clientId) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(tokenUrl))
+            // Use a static HttpClient instance (best practice)
+            using (var httpClient = new HttpClient())
             {
-                throw new InvalidOperationException("Missing OrderCloud authentication configuration.");
-            }
+                // Set headers
+                httpClient.DefaultRequestHeaders.Accept.Clear();
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Accept header
 
-            var tokenRequest = new Dictionary<string, string>
-        {
-            { "client_id", clientId },
-            { "grant_type", "password" },
-            { "username", username },
-            { "password", password },
-            { "scope", scope }
-        };
+                // Prepare the request body (client credentials)
+                var requestBody = $"grant_type=password&client_id={_clientId}&username={_clientUserName}&password={_clientPassword}&scope={_scope}";
+                HttpContent requestContent = new StringContent(requestBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-            var requestContent = new FormUrlEncodedContent(tokenRequest);
+                try
+                {
+                    // Send the POST request
+                    var response =   httpClient.PostAsync(_tokenUrl, requestContent).Result;
 
-            try
-            {
-                var response = await _httpClient.PostAsync(tokenUrl, requestContent);
-                response.EnsureSuccessStatusCode();
+                    // Ensure the request was successful
+                    response.EnsureSuccessStatusCode();
 
-                var content = await response.Content.ReadAsStringAsync();
-                var tokenResponse = JsonConvert.DeserializeObject<OrderCloudAuthResponse>(content);
+                    // Parse the response content
+                    var responseContent = response.Content.ReadAsStringAsync().Result;
+                    var tokenResponse = JsonConvert.DeserializeObject<OrderCloudAuthResponse>(responseContent);
 
-                _accessToken = tokenResponse.AccessToken;
-                _tokenExpiry = DateTime.UtcNow.AddSeconds(tokenResponse.ExpiresIn - 60); // Refresh 1 min before expiry
+                    // Return the access token
+                    return tokenResponse.AccessToken;
+                }
+                catch (HttpRequestException ex)
+                {
+                    Log.Info("Failed to retrieve the API token. Please check your credentials and try again.", "");
+                }
+                catch (JsonException ex)
+                {
+                    Log.Info("Failed to parse the API token response.", "");
+                }
+                catch (Exception ex)
+                {
+                    Log.Info("An unexpected error occurred while retrieving the API token.", "");
+                }
 
-                Console.WriteLine("Access token obtained successfully.");
-                return _accessToken;
-            }
-            catch (HttpRequestException ex)
-            {
-                Console.WriteLine($"Error fetching access token: {ex.Message}");
-                throw;
+                return null;
             }
         }
 
-        public async Task SetAuthorizationHeaderAsync()
-        {
-            string token = await GetAccessTokenAsync();
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-        }
+
     }
 }

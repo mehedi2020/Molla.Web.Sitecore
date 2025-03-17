@@ -73,6 +73,13 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
     </PackageReference>
+	  <PackageReference Include="Sitecore.Horizon.Search.GraphQL">
+    </PackageReference>
+	 <PackageReference Include="Sitecore.XA.Feature.Horizon">
+    </PackageReference>
+	
+	
+	
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.config" />

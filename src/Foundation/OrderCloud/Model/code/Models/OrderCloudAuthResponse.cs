@@ -12,5 +12,7 @@ namespace Molla.Foundation.OrderCloud.Models.Models
 
         [JsonProperty("expires_in")]
         public int ExpiresIn { get; set; }
+
+
     }
 }

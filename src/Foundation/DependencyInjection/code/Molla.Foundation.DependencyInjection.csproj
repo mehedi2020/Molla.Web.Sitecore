@@ -52,7 +52,7 @@
     <Compile Include="ServiceAttribute.cs" />
     <Compile Include="ServiceCollectionExtensions.cs" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup> 
     <PackageReference Include="Microsoft.AspNet.Mvc">
     </PackageReference>
     <PackageReference Include="Microsoft.AspNet.WebApi.Core">
@@ -66,6 +66,8 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
     </PackageReference>
     <PackageReference Include="System.Diagnostics.DiagnosticSource">
+    </PackageReference>
+	 <PackageReference Include="Sitecore.XA.Feature.Horizon">
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
