@@ -1,0 +1,57 @@
+﻿@model Molla.Foundation.OrderCloud.Models.CategoryResponse
+
+<div class="container categories pt-6">
+    <h2 class="title-lg text-center mb-4">Shop by Categories</h2><!-- End .title-lg text-center -->
+
+    <div class="row">
+        <div class="col-6 col-lg-4">
+            <div class="banner banner-display banner-link-anim">
+                <a href="/categories/@Model.Items[0].ID">
+                    <img src="@Model.Items.FirstOrDefault().xp.ImagePath" alt="@Model.Items.FirstOrDefault().Name">
+                </a>
+
+                <div class="banner-content banner-content-center">
+                    <h3 class="banner-title text-white"><a href="#">@Model.Items.FirstOrDefault().Name</a></h3><!-- End .banner-title -->
+                    <a  href="/categories/@Model.Items[0].ID" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                </div><!-- End .banner-content -->
+            </div><!-- End .banner -->
+        </div><!-- End .col-sm-6 col-lg-3 -->
+        <div class="col-6 col-lg-4 order-lg-last">
+            <div class="banner banner-display banner-link-anim">
+                <a href="#">
+                    <img src="@Model.Items[1].xp.ImagePath" alt="@Model.Items[1].Name">
+                </a>
+
+                <div class="banner-content banner-content-center">
+                    <h3 class="banner-title text-white"><a href="#">@Model.Items[1].Name</a></h3><!-- End .banner-title -->
+                    <a href="/categories/@Model.Items[1].ID" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                </div><!-- End .banner-content -->
+            </div><!-- End .banner -->
+        </div><!-- End .col-sm-6 col-lg-3 -->
+        <div class="col-sm-12 col-lg-4 banners-sm">
+            <div class="row">
+                <div class="banner banner-display banner-link-anim col-lg-12 col-6">
+                    <a href="/categories/@Model.Items[2].ID">
+                        <img src="@Model.Items[2].xp.ImagePath" alt="@Model.Items[2].Name">
+                    </a>
+
+                    <div class="banner-content banner-content-center">
+                        <h3 class="banner-title text-white"><a href="#">@Model.Items[2].Name</a></h3><!-- End .banner-title -->
+                        <a href="/categories/@Model.Items[2].ID" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                    </div><!-- End .banner-content -->
+                </div><!-- End .banner -->
+
+                <div class="banner banner-display banner-link-anim col-lg-12 col-6">
+                    <a href="/categories/@Model.Items[3].ID">
+                        <img src="@Model.Items[3].xp.ImagePath" alt="@Model.Items[3].Name">
+                    </a>
+
+                    <div class="banner-content banner-content-center">
+                        <h3 class="banner-title text-white"><a href="#">@Model.Items[3].Name</a></h3><!-- End .banner-title -->
+                        <a href="/categories/@Model.Items[3].ID" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                    </div><!-- End .banner-content -->
+                </div><!-- End .banner -->
+            </div>
+        </div><!-- End .col-sm-6 col-lg-3 -->
+    </div><!-- End .row -->
+</div><!-- End .container -->

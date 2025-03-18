@@ -46,6 +46,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CategoryResponse.cs" />
     <Compile Include="Models\OrderCloudAuthResponse.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

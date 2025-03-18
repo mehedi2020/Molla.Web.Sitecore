@@ -41,7 +41,7 @@ namespace Molla.Foundation.OrderCloud.Common.Services
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); // Accept header
 
                 // Prepare the request body (client credentials)
-                var requestBody = $"grant_type=password&client_id={_clientId}&username={_clientUserName}&password={_clientPassword}&scope={_scope}";
+                var requestBody = $"grant_type=password&client_id={_clientId}&username={_clientUserName}&password={_clientPassword}";
                 HttpContent requestContent = new StringContent(requestBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
                 try

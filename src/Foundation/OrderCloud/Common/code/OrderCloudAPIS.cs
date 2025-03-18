@@ -7,6 +7,8 @@
         public static string GetCatalogEndpoint() => $"{BaseUrl}/catalogs";
         public static string GetProductEndpoint() => $"{BaseUrl}/products";
         public static string GetSuppliersEndpoint() => $"{BaseUrl}/suppliers";
+        public static string GetCategoriesByCatalogNameEndpoint(string catalogID) => $"{BaseUrl}/catalogs/{catalogID}/categories";
+
 
         public static readonly string _tokenUrl = "https://sandboxapi.ordercloud.io/oauth/token"; // OrderCloud OAuth token endpoint 
 
